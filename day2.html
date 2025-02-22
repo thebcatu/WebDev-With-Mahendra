@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeSheet</title>
+    <style>
+        .container{
+            width: 60%;
+            margin: auto;
+            padding: 10px;
+            border: 5px solid black;
+        }
+        #center{
+            text-align: center;
+        }
+        hr{
+            border:1px solid black;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-around;
+        }
+        .cgpa{
+            background-color: rgb(17, 17, 100);
+            color: red;
+            padding: 5px 10px;
+            border-radius: 10px;
+            max-width: 20%;
+            text-align: center;
+            margin: auto;
+        }
+        #submarks{
+            margin: 1%;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        td{
+            padding-left: 10px;
+        }
+        .sign{
+            margin-left: 35%;
+        }
+        .date{
+            text-align: right;
+        }
+        .date h5{
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="center">MARKSHEET</h1>
+        <hr>
+        <div class="flex">
+            <div>
+                <h2>STUDENT INFORMATION</h2>
+                <ul>
+                    <li>Name:...............................</li>
+                    <li>Roll Number:.........................</li>
+                    <li>Class:...............................</li>
+                    <li>School Name:...........................</li>
+                </ul>
+            </div>
+            <div>
+                <h2>SCHOOL INFORMATION</h2>
+                <ul>
+                    <li>Name:...........................</li>
+                    <li>Roll Number:.......................</li>
+                    <li>Class:.............................</li>
+                    <li>School Name:..........................</li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="cgpa">CGPA: 3.90</h2>
+        <hr>
+        <div class="table">
+            <h2 id="submarks">SUBJECT MARKS</h2>
+            <table border="1">
+                <tr>
+                    <td>Subject</td>
+                    <td>Full Marks</td>
+                    <td>Obtained Marks</td>
+                    <td>Remarks</td>
+                </tr>
+                <tr>
+                    <td>Mathematics</td>
+                    <td>100</td>
+                    <td>..............</td>
+                    <td>..............</td>
+                </tr>
+
+                <tr>
+                    <td>Science</td>
+                    <td>100</td>
+                    <td>..............</td>
+                    <td>..............</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>100</td>
+                    <td>..............</td>
+                    <td>..............</td>
+                </tr>
+                <tr>
+                    <td>Social Studies</td>
+                    <td>100</td>
+                    <td>..............</td>
+                    <td>..............</td>
+                </tr>
+                <tr>
+                    <td>Computer</td>
+                    <td>100</td>
+                    <td>..............</td>
+                    <td>..............</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div>
+            <p>Total Marks:................ Percentage:............</p>
+            <p>Result: Pass/Fail(&#10003;)</p>
+        </div>
+        <hr>
+        <div>
+            <div class="sign">
+                <h1>SIGNATURE</h1>
+                <div class="text-left">
+                    <h5>Class Teacher:...............</h5>
+                    <h5>Principle:...............</h5>
+                    <h5>Date:...............</h5>
+                </div>
+                
+            </div>
+            <div class="date">
+                <h5>Date: 3/21/2025</h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
