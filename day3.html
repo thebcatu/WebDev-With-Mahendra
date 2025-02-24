@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Example - Day 3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main {
+            border: 5px solid red;
+            width: 60%;
+            margin: 10px auto;
+            padding: 10px 20px;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo h1 {
+            font-size: large;
+        }
+
+        .logo .D {
+            color: red;
+        }
+
+        .logo img {
+            height: 30px;
+            width: 30px;
+        }
+
+        .top-left ul {
+            margin: 0 -35px;
+        }
+
+        .top-left ul li {
+            list-style: none;
+            margin: 5px 0;
+
+            font-weight: bold;
+        }
+
+        .top-left h2 {
+            background-color: rgb(7, 146, 146);
+            color: black;
+        }
+
+        .top-left h2 .ktm {
+            color: red;
+            text-transform: uppercase;
+        }
+
+        .top-right {
+            border-left: 10px solid black;
+            padding-left: 10px;
+        }
+
+        .top-right ul li {
+            list-style: none;
+            font-weight: bold;
+        }
+
+        .top-right img {
+            margin-left: 35px;
+            height: 150px;
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        hr {
+            border: 5px solid rgb(53, 49, 49);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table tr,
+        th,
+        td {
+            border: 1px solid black;
+            height: 30px;
+        }
+
+        table td {
+            padding-left: 10px;
+        }
+
+        .Quanti {
+            background-color: yellow;
+        }
+
+        table td[colspan="2"] {
+            color: red;
+        }
+
+        .phone {
+            color: yellow;
+        }
+
+        .bottom-sign {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            justify-items: end
+        }
+
+        .bottom-sign h2{
+            background-color: rgb(15, 168, 168);
+            padding: 10px 15px;
+            border-radius: 10px;
+            color: black;
+        }
+
+        .bottom-sign h2 a{
+            text-decoration: none;
+        }
+
+        .bottom-sign img {
+            width: 100px;
+            height: 50px;
+        }
+        .a{
+            color:blue
+        }
+        .b{
+            background-color: yellow;
+        }
+        .c{
+            background-color: yellow;
+            color:greenyellow
+        }
+        .ubtot{
+            color:green
+        }
+        
+        
+        .conditions{
+            color: pink;
+        }
+        .look{
+            color: blue;
+        }
+        .Tq{
+            color: red;
+        }
+        .phone{
+            color: yellow;
+        }
+        .sac{
+            color:red
+        }
+        .on{
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <section class="top">
+            <section class="top-left">
+                <section class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png" alt="image-left">
+                    <h1>Cool <span class="D">D</span>evs</h1>
+                </section>
+                <ul>
+                    <li>Payment Information</li>
+                    <li>Payment Method: Credit Card</li>
+                    <li>Transaction ID: TXN-987654321</li>
+                    <li>Payment Status: Paid</li>
+                </ul>
+                <h2><span class="ktm">kathmandu</span>-NP</h2>
+            </section>
+            <section class="top-right">
+                <ul>
+                    <li>Date: 22 February 2025</li>
+                    <li>Invoice Number: LB-20250222</li>
+                    <li>Customer Name: Mahendra Mahara</li>
+                    <li>Address: 123 Byapar Sadak, Lalitpur</li>
+                    <li>Contact Number: +1 (123) 45678</li>
+                </ul>
+                <img src="https://stantorchpromotions.com/wp-content/uploads/2023/02/logo-b1.jpeg" alt="image-right">
+            </section>
+        </section>
+        <hr>
+        <section class="middle">
+            <h1>Tran<span class="sac">sec</span>ti<span class="on">on</span> <span class="sac">Details</span></h1>
+            <table>
+                <tr>
+                    <th>Item Description</th>
+                    <th><span class="Quanti">Quanti</span>ty</th>
+                    <th>Unit Price</th>
+                    <th>Total Amount</th>
+                </tr>
+                <tr>
+                    <td>Product A</td>
+                    <td>2</td>
+                    <td><span class="b">$10</span></td>
+                    <td><span class="a">$20</span></td>
+                </tr>
+                <tr>
+                    <td>Pro<span id="b">duct b</span> </td>
+                    <td>1</td>
+                    <td><span class="b">$15</span></td>
+                    <td><span class="a">$15</span></td>
+                </tr>
+                <tr>
+                    <td>Product c</td>
+                    <td>3</td>
+                    <td><span class="b">$8</span></td>
+                    <td><span class="a">$24</span></td>
+                </tr>
+                <tr>
+                    <td>Service Charge</td>
+                    <td colspan="2" rowspan="4"> No Data Here</td>
+                    <td>$5</td>
+                </tr>
+                
+                <tr>
+                    <td>S<span class="ubtot">ubtot</span>al</td>
+                    <td>$64</td>
+                </tr>
+                <tr>
+                    <td>Tax (10%)</td>
+                    <td><span class="a">$6.40</span></td>
+                </tr>
+                <tr>
+                    <td>Discount (5%)</td>
+                    <td>-$3.20</td>
+                </tr>
+                <tr>
+                    <td><span class="c">Grand total</span></td>
+                    <td></td>
+                    <td></td>
+                    <td>$67.20</td>
+                </tr>
+            </table>
+        </section>
+        <section class="bottom">
+            <h3>Terms & <span class="conditions">Conditions:</span></h3>
+            <ul>
+                <li>Goods once sold are not refundable. </li>
+                <li>warning claims(if applicable)must be claims within 30 days of purchase.</li>
+                <li>Payments due immeditely uponreceipt of invoice.</li>
+                <li>Late payment may be subject to additional fees.</li>
+            </ul>
+            <P><span class="Tq">Thank you for your business!</span> we appricate your trust and <span class="look"> look forward to serving you again.</span></P>
+            <P> <span class="look"> For any inquiries, please contact: </span></P>
+            <P> Email: support@tech.com ||<span class="phone"> phone:+1(123)456-7890 </span></P>
+            
+            <section class="bottom-sign">
+                <h2><a href="https://www.mahendrasingh.com.np">Click here to visit my store</a></h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Jon_Kirsch%27s_Signature.png"
+                    alt="Signature">
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
