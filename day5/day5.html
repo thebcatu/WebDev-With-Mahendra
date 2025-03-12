@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page - Day 5</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            position: sticky;
+            z-index: 1000;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 15px 50px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar{
+            position: fixed;
+            width: 95%;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .auth-buttons button {
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .signup {
+            background: transparent;
+            border: 2px solid #00aaff;
+            color: #00aaff;
+            border-radius: 5px;
+        }
+
+        .login {
+            background: #00aaff;
+            color: white;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('your-image.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 100px;
+            text-align: left;
+        }
+
+        .hero-text {
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .category {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 10px 0;
+        }
+
+        /* Post Grid */
+        .post-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 50px;
+        }
+
+        .post {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .date {
+            font-size: 12px;
+            color: gray;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="logo">LOGO</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Feed</a></li>
+                <li><a href="#">Related Posts</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="signup">Sign Up</button>
+                <button class="login">Log In</button>
+            </div>
+        </nav>
+    
+        <header class="hero">
+            <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
+            <div class="hero-text">
+                <span class="category">MUSIC | FAMOSE</span>
+                <h1>This is your two-line post title</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing elit, adio do eiusmod.</p>
+            </div>
+        </header>
+    
+        <section class="post-grid">
+            <div class="post">
+                <span class="date">14 March 2018</span>
+                <h2>This is post title</h2>
+                <p>Architect</p>
+            </div>
+            <div class="post">
+                <span class="date">14 March 2018</span>
+                <h2>This is your two-line post title</h2>
+                <p>Lifestyle</p>
+            </div>
+            <div class="post">
+                <span class="date">14 March 2018</span>
+                <h2>This is post title</h2>
+                <p>Fashion</p>
+            </div>
+            <div class="post">
+                <span class="date">14 March 2018</span>
+                <h2>This is post title</h2>
+                <p>Fashion</p>
+            </div>
+        </section>
+    </div>
+    
+</body>
+
+</html>
