@@ -1,3 +1,44 @@
+# WebDev-With-Mahendra
+
+## 🧭 Quick Navigator
+
+[View Project Directory Navigator](./index.html)
+
+## Project Navigation
+
+Navigate to different project directories:
+
+- [Day 1 Coding](./day1/)
+- [Day 2 Coding](./day2/)
+- [Day 3 Coding](./day3/)
+- [Day 4 Coding](./day4/)
+- [Day 5 Coding](./day5/)
+
+## About This Repository
+
+This repository contains web development projects and exercises created during training sessions with Mahendra.
+
+## Project Structure
+
+The repository is organized by days/topics, with each directory containing specific exercises and projects.
+
+## Getting Started
+
+1. Clone this repository
+2. Navigate to any project directory
+3. Open the index.html file in your browser or use a local server
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- And more as the course progresses
+
+## License
+
+[Add your license information here]
+
 # 📚 Complete HTML Tags Reference Guide
 
 ## 📑 Table of Contents
@@ -37,7 +78,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Meta, title, links -->
     </head>
     <body>
         <header>
