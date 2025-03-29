@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gantt Chart for Project (Nepali Date)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .gantt-bar {
+      background-color: #4CAF50;
+      height: 20px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .gantt-date {
+      width: 100px;
+      text-align: center;
+    }
+    .month-label {
+      background-color: #f2f2f2;
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Project Plan Gantt Chart (Nepali Date)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th class="gantt-date">01-15 (Falgun)</th>
+        <th class="gantt-date">16-30 (Falgun)</th>
+        <th class="gantt-date">01-15 (Chaitra)</th>
+        <th class="gantt-date">16-30 (Chaitra)</th>
+        <th class="gantt-date">01-15 (Baisakh)</th>
+        <th class="gantt-date">16-30 (Baisakh)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Requirement Analysis -->
+      <tr>
+        <td>Requirement Analysis</td>
+        <td colspan="1" class="gantt-bar">5 Days</td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+      </tr>
+      <!-- System Design -->
+      <tr>
+        <td>System Design</td>
+        <td colspan="0"></td>
+        <td colspan="1" class="gantt-bar">5 Days</td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+      </tr>
+      <!-- Documentation -->
+      <tr>
+        <td>Documentation</td>
+        <td colspan="1" class="gantt-bar">6 Days</td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+      </tr>
+      <!-- Backend Development -->
+      <tr>
+        <td>Backend Development</td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="1" class="gantt-bar">11 Days</td>
+        <td colspan="1" class="gantt-bar">5 Days</td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+      </tr>
+      <!-- Frontend Development -->
+      <tr>
+        <td>Frontend Development</td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="1" class="gantt-bar">5 Days</td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+      </tr>
+      <!-- Testing -->
+      <tr>
+        <td>Testing</td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="1"></td>
+        <td colspan="1" class="gantt-bar">3 Days</td>
+        <td colspan="0"></td>
+      </tr>
+      <!-- Data Insertion -->
+      <tr>
+        <td>Data Insertion</td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="0"></td>
+        <td colspan="1" class="gantt-bar">11 Days</td>
+        <td colspan="1" class="gantt-bar">5 Days</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

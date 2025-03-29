@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Section iFrame Layout</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            height: 100vh;
+            width: 100%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #333;
+            box-sizing: border-box;
+        }
+        .section {
+            overflow: hidden;
+            position: relative;
+        }
+        .section-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="section-title">Section 1: Facebook Theme</div>
+            <iframe src="page3.html" title="Facebook Style" sandbox="allow-scripts allow-forms"></iframe>
+        </div>
+        <div class="section">
+            <div class="section-title">Section 2: YouTube Theme</div>
+            <iframe src="page4.html" title="YouTube Style" sandbox="allow-scripts allow-forms"></iframe>
+        </div>
+        <div class="section">
+            <div class="section-title">Section 3: Page 1</div>
+            <iframe src="page1.htm" title="First Page" sandbox="allow-scripts allow-forms"></iframe>
+        </div>
+        <div class="section">
+            <div class="section-title">Section 4: Page 2</div>
+            <iframe src="page2.html" title="Second Page" sandbox="allow-scripts allow-forms"></iframe>
+        </div>
+    </div>
+</body>
+</html>

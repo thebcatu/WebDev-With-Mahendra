@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ff0000; /* YouTube red */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .note {
+            font-size: 0.8em;
+            margin-top: 30px;
+            font-style: italic;
+        }
+        .iframe-notice {
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .code-hint {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-left: 3px solid #fff;
+            padding: 10px;
+            margin-top: 20px;
+            font-family: monospace;
+            text-align: left;
+            overflow: auto;
+        }
+        .advanced-hints {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            margin-top: 25px;
+            font-family: monospace;
+            text-align: left;
+            border-radius: 5px;
+        }
+        .advanced-hints h3 {
+            color: #ffeb3b;
+            margin-top: 0;
+        }
+        .advanced-hints dl {
+            margin: 10px 0;
+        }
+        .advanced-hints dt {
+            color: #ff9800;
+            font-weight: bold;
+        }
+        .advanced-hints dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        .advanced-hints code {
+            display: block;
+            padding: 10px;
+            background-color: #000;
+            border-radius: 3px;
+            margin: 10px 0;
+        }
+        .map-container {
+            margin: 20px auto;
+            max-width: 90%;
+            height: 400px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Google Map of Kathmandu</h1>
+    <p>Below is a simple Google Map showing Kathmandu, Nepal</p>
+    
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.27689214012!2d85.29111337072868!3d27.709031933985225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2sus!4v1631825149907!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</body>
+</html>

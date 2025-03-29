@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media Elements Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        dl {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            margin-bottom: 20px;
+        }
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        dd {
+            margin: 5px 0;
+        }
+        figure {
+            margin: 20px auto;
+            text-align: center;
+            width: 300px;
+        }
+        figcaption {
+            font-style: italic;
+            margin-top: 5px;
+            color: #555;
+        }
+        video, audio {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .heading {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="heading">HTML Media Elements Demonstration</h1>
+    </header>
+
+    <div class="container">
+        <dl>
+            <dt>Audio Element</dt>
+            <dd>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </dd>
+
+            <dt>Video Element</dt>
+            <dd>
+                <video width="320" height="240" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </dd>
+
+            <dt>Image Element</dt>
+            <dd>
+                <figure>
+                    <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Sample Image" width="300">
+                    <figcaption>A sample image with a caption</figcaption>
+                </figure>
+            </dd>
+        </dl>
+    </div>
+
+</body>
+</html>
