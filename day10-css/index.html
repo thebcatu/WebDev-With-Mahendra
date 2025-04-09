@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Properties Demo</h1>
+        <nav>
+            <ul>
+                <li><a href="#display">Display</a></li>
+                <li><a href="#position">Position</a></li>
+                <li><a href="#text">Text</a></li>
+                <li><a href="#layout">Layout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <section id="display" class="card">
+                <h2>Display Properties</h2>
+                <div class="block">block</div>
+                <span class="inline">inline</span>
+                <span class="inline">inline</span>
+                <div class="inline-block">inline-block</div>
+            </section>
+
+            <section id="position" class="card">
+                <h2>Position Properties</h2>
+                <div class="position-container">
+                    <div class="static">static</div>
+                    <div class="relative">relative</div>
+                    <div class="absolute">absolute</div>
+                    <div class="sticky">sticky</div>
+                </div>
+            </section>
+
+            <section id="float" class="card">
+                <h2>Float vs Position</h2>
+                <div class="float-container">
+                    <div class="float-left">Float</div>
+                    <p>Text wraps around floated elements, unlike positioned elements.</p>
+                </div>
+            </section>
+
+            <section id="flex" class="card">
+                <h2>Flexbox Layout</h2>
+                <div class="flex-container">
+                    <div class="flex-item grow">grow</div>
+                    <div class="flex-item shrink">shrink</div>
+                    <div class="flex-item basis">basis</div>
+                </div>
+            </section>
+
+            <section id="text" class="card">
+                <h2>Text Styling</h2>
+                <p class="text-demo">Text with spacing & height</p>
+                <p class="text-decoration">Decoration</p>
+                <p class="text-transform">Transforms</p>
+            </section>
+
+            <section id="list" class="card">
+                <h2>List Styling</h2>
+                <ul class="styled-list">
+                    <li>Square bullets</li>
+                    <li>Inside position</li>
+                    <li>Custom spacing</li>
+                </ul>
+            </section>
+        </div>
+
+        <section id="layout" class="card full-width">
+            <h2>Two-Column Layout</h2>
+            <div class="two-column-container">
+                <div class="column">Left Content Area</div>
+                <div class="column">Right Content Area</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 CSS Properties Demo</p>
+    </footer>
+</body>
+</html>

@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Page - Day 5</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Blog Hub - Latest Posts</title>
     <style>
         * {
             margin: 0;
@@ -15,27 +14,28 @@
 
         body {
             background-color: #f4f4f4;
+            padding-top: 80px;
         }
 
-        /* Navbar Styles */
         .navbar {
             display: flex;
-            position: sticky;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
             z-index: 1000;
             justify-content: space-between;
             align-items: center;
             background: white;
-            padding: 15px 50px;
+            padding: 15px 30px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .navbar{
-            position: fixed;
-            width: 95%;
+            box-sizing: border-box;
         }
 
         .logo {
-            font-size: 20px;
+            font-size: 24px;
             font-weight: bold;
+            color: #00aaff;
         }
 
         .nav-links {
@@ -48,6 +48,10 @@
             text-decoration: none;
             color: #333;
             font-weight: bold;
+        }
+
+        .nav-links li a:hover {
+            color: #00aaff;
         }
 
         .auth-buttons button {
@@ -71,17 +75,25 @@
             margin-left: 10px;
         }
 
-        /* Hero Section */
         .hero {
-            background: url('your-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            position: relative;
             color: white;
-            padding: 100px;
-            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.7);
         }
 
         .hero-text {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
             max-width: 600px;
-            background: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 5px;
         }
@@ -97,12 +109,11 @@
             margin: 10px 0;
         }
 
-        /* Post Grid */
         .post-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            padding: 50px;
+            padding: 0 50px 50px;
         }
 
         .post {
@@ -110,6 +121,11 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .post:hover {
+            transform: translateY(-5px);
         }
 
         .date {
@@ -125,59 +141,57 @@
         p {
             font-size: 14px;
             color: #666;
+            margin-top: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <nav class="navbar">
-            <div class="logo">LOGO</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">My Feed</a></li>
-                <li><a href="#">Related Posts</a></li>
-                <li><a href="#">News</a></li>
-            </ul>
-            <div class="auth-buttons">
-                <button class="signup">Sign Up</button>
-                <button class="login">Log In</button>
-            </div>
-        </nav>
-    
-        <header class="hero">
-            <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image">
-            <div class="hero-text">
-                <span class="category">MUSIC | FAMOSE</span>
-                <h1>This is your two-line post title</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing elit, adio do eiusmod.</p>
-            </div>
-        </header>
-    
-        <section class="post-grid">
-            <div class="post">
-                <span class="date">14 March 2018</span>
-                <h2>This is post title</h2>
-                <p>Architect</p>
-            </div>
-            <div class="post">
-                <span class="date">14 March 2018</span>
-                <h2>This is your two-line post title</h2>
-                <p>Lifestyle</p>
-            </div>
-            <div class="post">
-                <span class="date">14 March 2018</span>
-                <h2>This is post title</h2>
-                <p>Fashion</p>
-            </div>
-            <div class="post">
-                <span class="date">14 March 2018</span>
-                <h2>This is post title</h2>
-                <p>Fashion</p>
-            </div>
-        </section>
-    </div>
-    
+    <nav class="navbar">
+        <div class="logo">BLOG HUB</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Feed</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Categories</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="signup">Sign Up</button>
+            <button class="login">Log In</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Musician playing guitar on stage">
+        <div class="hero-text">
+            <span class="category">MUSIC | FEATURED</span>
+            <h1>The Evolution of Indie Music in the Digital Age</h1>
+            <p>How independent artists are leveraging technology to reach global audiences and redefine success in the music industry.</p>
+        </div>
+    </header>
+
+    <section class="post-grid">
+        <div class="post">
+            <span class="date">April 15, 2023</span>
+            <h2>Modern Architecture Trends in 2023</h2>
+            <p>Exploring how sustainable materials and minimalist design are reshaping urban landscapes around the world.</p>
+        </div>
+        <div class="post">
+            <span class="date">April 12, 2023</span>
+            <h2>Work-Life Balance in Remote Work Era</h2>
+            <p>Tips and strategies for maintaining well-being while working from home in the post-pandemic world.</p>
+        </div>
+        <div class="post">
+            <span class="date">April 10, 2023</span>
+            <h2>Spring Fashion Guide: Essential Looks</h2>
+            <p>This season's must-have pieces and how to style them for both casual and formal occasions.</p>
+        </div>
+        <div class="post">
+            <span class="date">April 8, 2023</span>
+            <h2>Plant-Based Diets: Myths and Facts</h2>
+            <p>Scientific insights into nutrition, health benefits, and common misconceptions about plant-based eating.</p>
+        </div>
+    </section>
 </body>
 
 </html>
