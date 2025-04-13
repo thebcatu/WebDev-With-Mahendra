@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Landing Page</title>
+    <link rel="stylesheet" href="day11-A.css">
+</head>
+<body>
+    <div class="top-header">
+        <h1>Responsive Layout Created Using Flexbox</h1>
+        <p>This two-column design demonstrates the power of CSS Flexbox for modern layouts</p>
+    </div>
+    
+    <div class="container">
+        <!-- Left Column (Form Area) -->
+        <div class="column form-column">
+            <form>
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <select id="subject">
+                            <option value="" disabled selected>Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" placeholder="Type your message here..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <p>Preferred contact method:</p>
+                        <div class="radio-group">
+                            <input type="radio" id="contact-email" name="contact-method">
+                            <label for="contact-email">Email</label>
+                            
+                            <input type="radio" id="contact-phone" name="contact-method">
+                            <label for="contact-phone">Phone</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="newsletter">
+                        <label for="newsletter">Subscribe to newsletter</label>
+                    </div>
+                    
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        
+        <!-- Right Column (CSS Showcase) -->
+        <div class="column showcase-column">
+            <div class="showcase-row">
+                <div class="card">
+                    <h2>Styling Demo</h2>
+                    <p>This card demonstrates borders, shadows, padding, and spacing techniques.</p>
+                    <button class="card-btn">Learn More</button>
+                    <div class="tag">New</div>
+                </div>
+                <div class="card highlight">
+                    <h2>Featured Box</h2>
+                    <p>This box uses gradient background and enhanced styling.</p>
+                    <div class="action-buttons">
+                        <button class="card-btn primary">Get Started</button>
+                        <button class="card-btn secondary">View Demo</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="showcase-row">
+                <div class="card text-card">
+                    <h2>Text Formatting</h2>
+                    <p class="centered">This text is centered with shadow</p>
+                    <p class="spaced">LETTER SPACING EXAMPLE</p>
+                    <p class="lined">This paragraph demonstrates proper line height for readability.</p>
+                    <div class="card-footer">
+                        <button class="card-btn small">Share</button>
+                        <span class="badge">Typography</span>
+                    </div>
+                </div>
+                <div class="card list-card">
+                    <h2>Styled List</h2>
+                    <ul>
+                        <li>Custom bullet points</li>
+                        <li>Proper spacing between items</li>
+                        <li>Hover effects on each item</li>
+                        <li>Clean and organized layout</li>
+                    </ul>
+                    <button class="card-btn outline">View All Features</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
